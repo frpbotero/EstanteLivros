@@ -1,21 +1,16 @@
 require("express-async-errors");
 const express = require("express");
-const cors = require("cors");
 require("dotenv").config();
 
 const { connect } = require("./src/db");
+const { corsMiddleware } = require("./src/cors");
 
 async function main() {
   const collections = await connect();
 
   const app = express();
-  const origins = process.env.FRONTEND_ORIGIN
-    ? process.env.FRONTEND_ORIGIN.split(",").map((origin) => origin.trim())
-    : true;
-  if (origins === true) console.warn("FRONTEND_ORIGIN não definido: CORS aberto.");
-
   app.use(express.json({ limit: "1mb" }));
-  app.use(cors({ origin: origins }));
+  app.use(corsMiddleware(process.env.FRONTEND_ORIGIN));
 
   app.get("/", function (req, res) {
     res.send("Hello World");
