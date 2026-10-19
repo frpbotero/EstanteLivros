@@ -1,4 +1,5 @@
-const baseUrl = import.meta.env.VITE_API_URL || "http://localhost:3000/";
+// Definido no build a partir de BACKEND_URL (vite.config.js), sem "/" final.
+const baseUrl = `${__BACKEND_URL__}/`;
 const TOKEN_KEY = "estante.token";
 
 export class ApiError extends Error {

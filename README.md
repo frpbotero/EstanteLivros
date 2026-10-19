@@ -105,6 +105,11 @@
 
 Frontend em http://localhost:5173 e API em http://localhost:3333. Cada usuário cria a própria conta e tem um link público em `/u/<slug>`.
 
+<h3>Variáveis de ambiente em produção</h3>
+
+<p><b>Backend:</b> <code>MONGODB_URI</code>, <code>DB_NAME</code>, <code>JWT_SECRET</code>, <code>FRONTEND_ORIGIN</code> (aceita vírgula e curinga, ex. <code>https://seu-site-*.vercel.app</code>) e <code>GOOGLE_CLIENT_ID</code> (opcional).</p>
+<p><b>Frontend</b> (lidas no build, ex. Vercel com Root Directory <code>frontend</code>): <code>BACKEND_URL</code> (obrigatória, o build falha sem ela) e <code>GOOGLE_CLIENT_ID</code> (opcional).</p>
+
 <h2 id="tecnologias">Tecnologias</h2>
   <ul>
   <li>React</li>
