@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#410004", "surface": "#f3fbf8", "secondary-fixed-dim": "#accdc5", "on-surface-variant": "#3f4947", "surface-container-low": "#edf5f2", "outline": "#6f7977", "surface-container-high": "#e2eae7", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "primary-fixed-dim": "#8ad4c8", "surface-container": "#e7f0ec", "on-secondary-fixed": "#00201b", "on-tertiary-container": "#ffb6b1", "on-primary-fixed": "#00201c", "surface-tint": "#176a60", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "tertiary": "#7c0d14", "tertiary-container": "#9d2728", "primary": "#00453e", "inverse-surface": "#2a3230", "inverse-primary": "#8ad4c8", "tertiary-fixed-dim": "#ffb3ae", "primary-container": "#005f56", "secondary": "#45645d", "surface-variant": "#dce4e1", "on-surface": "#151d1b", "surface-dim": "#d3dcd9", "on-primary-container": "#8cd6ca", "surface-bright": "#f3fbf8", "on-secondary-container": "#4b6a63", "secondary-container": "#c8eae1", "error": "#ba1a1a", "inverse-on-surface": "#eaf3ef", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#8b191d", "on-primary": "#ffffff", "outline-variant": "#bec9c6", "on-primary-fixed-variant": "#005048", "tertiary-fixed": "#ffdad7", "on-secondary-fixed-variant": "#2e4c46", "surface-container-highest": "#dce4e1", "background": "#f3fbf8", "on-secondary": "#ffffff", "primary-fixed": "#a6f1e4", "secondary-fixed": "#c8eae1", "on-background": "#151d1b" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "margin": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "gutter-desktop": "1.5rem", "margin-desktop": "2.5rem", "space-md": "1rem" }, "fontFamily": { "body-md": [ "Plus Jakarta Sans" ], "headline-lg": [ "Newsreader" ], "label-lg": [ "Plus Jakarta Sans" ], "headline-xl-mobile": [ "Newsreader" ], "headline-md": [ "Newsreader" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-xl": [ "Newsreader" ], "headline-sm": [ "Newsreader" ], "label-md": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Newsreader" ], "label-sm": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ] }, "fontSize": { "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "headline-xl-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-6 px-4"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3"><div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">local_library</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Bookstore</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Biblioteca Pessoal</span></div></div><div class="px-2 py-3 bg-surface-container-low rounded-xl flex flex-col gap-2"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Link Público</span><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Ativo</span></div><button class="flex items-center justify-between w-full px-2.5 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors text-left" type="button"><span class="font-body-sm text-body-sm text-secondary truncate">/u/felipe-botero</span><span class="material-symbols-outlined text-secondary text-[16px]">content_copy</span></button></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-xl shadow-[0_2px_6px_rgba(0,40,35,0.08)]"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="acervo-pessoal" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span>Acervo Pessoal</a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="novo-livro" href="#"><span class="material-symbols-outlined text-[20px]">add_circle</span>Novo Livro</a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="emprestimos-relatorios" href="#"><span class="material-symbols-outlined text-[20px]">swap_horizontal_circle</span>Empréstimos &amp; Relatórios</a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="vitrine-publica" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span>Vitrine Pública</a></nav></div><div class="flex flex-col gap-3 pt-4 border-t border-surface-container"><a class="flex items-center gap-3 px-3 py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[20px]">settings</span>Configurações</a><div class="flex items-center gap-3 px-2 py-2 rounded-xl bg-surface-container-low"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate">Felipe Botero</span><span class="font-body-sm text-body-sm text-secondary truncate">Bibliotecário</span></div><a class="text-on-surface-variant hover:text-error transition-colors p-1" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-3 w-80"><div class="flex items-center gap-2 w-full px-3 py-2 rounded-xl bg-surface-container-low text-on-surface-variant focus-within:bg-surface-container-lowest transition-colors"><span class="material-symbols-outlined text-[20px] text-secondary">search</span><input class="w-full bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline-variant" placeholder="Buscar no acervo, autores, ISBN..." type="text"/></div></div><div class="flex items-center gap-5"><span class="font-body-md text-body-md text-secondary">Olá, <strong class="text-on-surface font-label-lg">Felipe Botero</strong></span><div class="flex items-center gap-2"><button class="w-9 h-9 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><button class="w-9 h-9 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-background w-full min-h-screen px-8 py-6"><div class="flex flex-col w-full gap-6 pb-12">
+<!-- Critical Overdue Hero Alert Banner -->
+<div class="relative overflow-hidden rounded-xl bg-tertiary-fixed text-on-tertiary-fixed p-6 shadow-md transition-all duration-300 hover:shadow-lg">
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-tertiary/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary text-on-tertiary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">warning</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary font-label-sm text-label-sm tracking-wider uppercase">Alerta de Devolução</span>
+<span class="font-label-md text-label-md text-tertiary-fixed-variant">+7 dias de atraso</span>
+</div>
+<p class="font-headline-sm text-headline-sm tracking-tight text-on-tertiary-fixed font-semibold">
+            Cem Anos de Solidão <span class="font-body-md text-body-md font-normal text-on-tertiary-fixed-variant">com Lucas Mendes</span>
+</p>
+<span class="font-body-sm text-body-sm text-on-tertiary-fixed-variant">Prazo limite expirou em 14 de Outubro. Última notificação enviada há 3 dias.</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0 self-end md:self-center">
+<a class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-lowest text-tertiary hover:bg-surface-container font-label-lg text-label-lg shadow-sm transition-transform active:scale-95" href="https://wa.me/5511984218844?text=Ol%C3%A1%20Lucas!%20Passando%20para%20lembrar%20do%20livro%20Cem%20Anos%20de%20Solid%C3%A3o%20da%20biblioteca." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-[#25D366]">chat</span>
+          Lembrar no WhatsApp
+        </a>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-tertiary text-on-tertiary hover:bg-tertiary-container font-label-lg text-label-lg shadow-sm transition-transform active:scale-95" onclick="registerReturn('Cem Anos de Solidão', 'Lucas Mendes')" type="button">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+          Registrar Devolução
+        </button>
+</div>
+</div>
+</div>
+<!-- KPI Stats Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between gap-3 relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Volumes Ativos</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">3</span>
+<span class="font-label-md text-label-md text-secondary">em circulação</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 60%"></div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between gap-3 relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Atraso Ativo</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">timer_off</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-tertiary font-bold">1</span>
+<span class="font-label-md text-label-md text-on-surface-variant">expirado / atrasado</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 33%"></div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between gap-3 relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Eficácia</span>
+<div class="w-8 h-8 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">92%</span>
+<span class="font-label-md text-label-md text-secondary">devolução no prazo</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between gap-3 relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Permanência</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">16</span>
+<span class="font-label-md text-label-md text-secondary">dias de tempo médio</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 53%"></div>
+</div>
+</div>
+</div>
+<!-- Filter Strip & Global Table Controls -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-surface-container-low p-2 rounded-xl">
+<div class="flex items-center gap-1.5 overflow-x-auto">
+<button class="tab-btn px-4 py-2 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary shadow-sm transition-colors whitespace-nowrap" id="tab-active" onclick="switchTab('active')" type="button">
+        Ativos (3)
+      </button>
+<button class="tab-btn px-4 py-2 rounded-lg font-label-md text-label-md bg-transparent text-secondary hover:bg-surface-container-high transition-colors whitespace-nowrap" id="tab-pending" onclick="switchTab('pending')" type="button">
+        Pendentes (2)
+      </button>
+<button class="tab-btn px-4 py-2 rounded-lg font-label-md text-label-md bg-transparent text-secondary hover:bg-surface-container-high transition-colors whitespace-nowrap" id="tab-history" onclick="switchTab('history')" type="button">
+        Histórico Completo
+      </button>
+</div>
+<div class="flex items-center gap-2 px-2">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-secondary">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span class="font-label-sm text-label-sm">Outubro / 2024</span>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-colors shadow-sm" onclick="exportReport()" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+        Exportar CSV
+      </button>
+</div>
+</div>
+<!-- Split Dashboard Layout: Left Action Cards / Right Consolidated Report -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-6 items-start">
+<!-- Left Section: Immediate Operational Deck (4 Cols on xl) -->
+<div class="xl:col-span-4 flex flex-col gap-4">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">bookmark_manager</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Painel Rápido de Ação</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-secondary">3 Ativos</span>
+</div>
+<!-- Card 1: Critical Overdue -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col gap-3.5 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary"></div>
+<div class="flex gap-3.5 items-start pl-1">
+<img class="w-16 h-24 object-cover rounded-lg shadow-sm shrink-0 bg-surface-container" data-alt="Vintage hardcover book Cem Anos de Solidão by Gabriel García Márquez with deep emerald and gold accents resting on clean paper desktop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf_L0ou3EOE2OqJCi_LFSdtTptSO3tEb_-IOVbNw1FpkekD8i-BWCwguM6AASc-IvolLFkFSxQ_uoOpctS2wAgSwHZeib21oWWrE83icPK5hErWzGgpllOV6JDRulWju9JXdfVAgrNlQ7jvXqV8BLM6DyCEqwgYOjDPuUSsiXApVgYhY-6XYEgtMQOH8lhc--5zQE-VHh55-EyLQ8e4SNg2Fx4rgQWFGmnUSGorH9oHEP-tpTRGMVZ"/>
+<div class="flex flex-col min-w-0 flex-1 gap-1">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-semibold truncate">Atrasado (+7d)</span>
+<span class="font-label-sm text-label-sm text-secondary">Dev: 14 Out</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate font-semibold leading-snug">Cem Anos de Solidão</h3>
+<span class="font-body-sm text-body-sm text-secondary">Gabriel García Márquez</span>
+<div class="flex items-center gap-1.5 pt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">person</span>
+<strong class="font-label-md text-label-md text-on-surface truncate">Lucas Mendes</strong>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-none pl-1">
+<a class="flex items-center gap-1 text-secondary hover:text-primary font-label-md text-label-md" href="https://wa.me/5511984218844" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">call</span>
+            (11) 98421-8844
+          </a>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md transition-colors flex items-center gap-1" onclick="registerReturn('Cem Anos de Solidão', 'Lucas Mendes')" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+            Devolver
+          </button>
+</div>
+</div>
+<!-- Card 2: Regular Active Loan -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col gap-3.5 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex gap-3.5 items-start pl-1">
+<img class="w-16 h-24 object-cover rounded-lg shadow-sm shrink-0 bg-surface-container" data-alt="Modern design book cover of Ensaio Sobre a Cegueira by José Saramago with minimal stark contrast typography on textured parchment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqgOH5ZqmQot0OTi4b2K_JiVI1TfdDYgkauaRCjbgm_-xR6-4ASh0eAVZaxX8Ykw0rh4MgOHx4-7Ldezg-RJ84rxkHUotJKcl0A95WX2RaRqiKpq0hX9qCf3QfQg8gt7oaerl4PEwk56zGkVpW9_qaQpAecoH2SJsSvo2WuLzHC0zVavXDuIhGB8SkTPbFsWEdjzOHgaBJxHqRtP_8sZ_g-IMIMdwWcioM79FWPfYCJdVrxIJoFaWn"/>
+<div class="flex flex-col min-w-0 flex-1 gap-1">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-semibold">Emprestado</span>
+<span class="font-label-sm text-label-sm text-secondary">Dev: 29 Out</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate font-semibold leading-snug">Ensaio Sobre a Cegueira</h3>
+<span class="font-body-sm text-body-sm text-secondary">José Saramago</span>
+<div class="flex items-center gap-1.5 pt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">person</span>
+<strong class="font-label-md text-label-md text-on-surface truncate">Camila Duarte</strong>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-none pl-1">
+<a class="flex items-center gap-1 text-secondary hover:text-primary font-label-md text-label-md" href="https://wa.me/5511971239900" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">call</span>
+            (11) 97123-9900
+          </a>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md transition-colors flex items-center gap-1" onclick="registerReturn('Ensaio Sobre a Cegueira', 'Camila Duarte')" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+            Devolver
+          </button>
+</div>
+</div>
+<!-- Card 3: Regular Active Loan -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col gap-3.5 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex gap-3.5 items-start pl-1">
+<img class="w-16 h-24 object-cover rounded-lg shadow-sm shrink-0 bg-surface-container" data-alt="Classic book edition of Dom Casmurro by Machado de Assis vintage hardcover layout in calm muted tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjrcopTvrY2-X6-cirCmsEw77ig19k-FfgReT4isBJ05C44U9WRWHlvEmU8df4CxSz0GQcYvEPx4IxB5Ju5yy7T-v5en0aNb3sq4YM9BrAqEjYjpTvlL_QdnqfWo07o3Qw3Ngy4-2TySBED48LDapINZCxE6EUhAouFuUnMJNUonPaeJIXQ1qC-mtlFYkuDoWMY8hLuzav199jhJyr1ESB_5kiCMpPn5VLa-jRJ4yNfkrYzjKSMSIZ"/>
+<div class="flex flex-col min-w-0 flex-1 gap-1">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-semibold">Emprestado</span>
+<span class="font-label-sm text-label-sm text-secondary">Dev: 03 Nov</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate font-semibold leading-snug">Dom Casmurro</h3>
+<span class="font-body-sm text-body-sm text-secondary">Machado de Assis</span>
+<div class="flex items-center gap-1.5 pt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">person</span>
+<strong class="font-label-md text-label-md text-on-surface truncate">Thiago Ribeiro</strong>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-none pl-1">
+<a class="flex items-center gap-1 text-secondary hover:text-primary font-label-md text-label-md" href="https://wa.me/5521998812233" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">call</span>
+            (21) 99881-2233
+          </a>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md transition-colors flex items-center gap-1" onclick="registerReturn('Dom Casmurro', 'Thiago Ribeiro')" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+            Devolver
+          </button>
+</div>
+</div>
+</div>
+<!-- Right Section: Consolidated Data Table (8 Cols on xl) -->
+<div class="xl:col-span-8 flex flex-col gap-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 px-1">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Relatório Consolidado de Uso</h2>
+<span class="font-body-sm text-body-sm text-secondary">Auditoria completa de saídas, prazos de devolução e requisições públicas</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-secondary">Exibindo 6 registros</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 font-semibold">Livro</th>
+<th class="py-3 px-3 font-semibold">Solicitante</th>
+<th class="py-3 px-3 font-semibold">Contato</th>
+<th class="py-3 px-3 font-semibold">Data Saída</th>
+<th class="py-3 px-3 font-semibold">Prazo Final</th>
+<th class="py-3 px-3 font-semibold">Tempo</th>
+<th class="py-3 px-3 font-semibold">Status</th>
+<th class="py-3 px-4 font-semibold text-right">Ação</th>
+</tr>
+</thead>
+<tbody class="divide-none" id="loan-table-rows">
+<!-- Row 1: Overdue -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-11 bg-surface-container rounded shrink-0 overflow-hidden shadow-xs">
+<div class="w-full h-full bg-cover bg-center" data-alt="Miniature book cover Cem Anos de Solidão in elegant emerald and cream styling" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAKvL8i_0SXV0nlbKLam9tCUV9IieQM1L0zcNyv_9EXxLOZ1eZ_0fIMp4V8yrrmrDMSkYm-BUABKBBy-HZ-2PbilZZziry760DdJrrsmrvi05kCg7_zUBm4W1u2-oDByF6LaqW3mEtxludC_zTr5TEkFsYeXnQwO-ijbBNCb7DWO0OtMZrY4azEm-W_6CFNbMawmQdLDoBy0yuANEGVJ7fuhMTL-GnoQRUSu2y1oFLJlWcqzgGF8Iue')"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Cem Anos de Solidão</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">G. García Márquez</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-md text-label-md text-on-surface block">Lucas Mendes</span>
+<span class="font-body-sm text-body-sm text-secondary">São Paulo, SP</span>
+</td>
+<td class="py-3.5 px-3">
+<a class="flex items-center gap-1 font-body-sm text-body-sm text-secondary hover:text-primary" href="https://wa.me/5511984218844" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-[#25D366]">chat</span>
+                    (11) 98421
+                  </a>
+</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">30 Set 2024</td>
+<td class="py-3.5 px-3 font-label-md text-label-md text-tertiary font-semibold">14 Out 2024</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-tertiary">21 dias (+7d)</td>
+<td class="py-3.5 px-3">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm whitespace-nowrap">Atrasado</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm transition-colors" onclick="registerReturn('Cem Anos de Solidão', 'Lucas Mendes')" type="button">
+                    Devolver
+                  </button>
+</td>
+</tr>
+<!-- Row 2: In Loan -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-11 bg-surface-container rounded shrink-0 overflow-hidden shadow-xs">
+<div class="w-full h-full bg-cover bg-center" data-alt="Miniature book cover Ensaio Sobre a Cegueira in modernist editorial palette" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAljD1hD_YJBe9fRgKTy8TmJ7DDLGD4PLcYIvQinrVgV6TCX6GK6_UAPTCMltqMIZdH-BynqQl_9T1353QrZFB-fiXoNVXociri8VMF3I-2MZoihUTVo0RaLLdYJjJ_gvaNFydSvY-Pap9YCvW4ZdhPG6BBOxI4xopQNR7I3s9cFaargNyds2_xzuJ26wSukh6QmvjHLB1nccHhegG9YJ7ISf7BBaJI_3XTCuHja9nmRFrpjoOjuQES')"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Ensaio Sobre a Cegueira</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">José Saramago</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-md text-label-md text-on-surface block">Camila Duarte</span>
+<span class="font-body-sm text-body-sm text-secondary">Campinas, SP</span>
+</td>
+<td class="py-3.5 px-3">
+<a class="flex items-center gap-1 font-body-sm text-body-sm text-secondary hover:text-primary" href="https://wa.me/5511971239900" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-[#25D366]">chat</span>
+                    (11) 97123
+                  </a>
+</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">15 Out 2024</td>
+<td class="py-3.5 px-3 font-label-md text-label-md text-on-surface font-medium">29 Out 2024</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">6 dias</td>
+<td class="py-3.5 px-3">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm whitespace-nowrap">Emprestado</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm transition-colors" onclick="registerReturn('Ensaio Sobre a Cegueira', 'Camila Duarte')" type="button">
+                    Devolver
+                  </button>
+</td>
+</tr>
+<!-- Row 3: In Loan -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-11 bg-surface-container rounded shrink-0 overflow-hidden shadow-xs">
+<div class="w-full h-full bg-cover bg-center" data-alt="Miniature book cover Dom Casmurro in clean muted green cloth library finish" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAarSv-Q-TWq_yWQHS984YzDrdsXbanZFohNFO6mfqoKL0BvnakX-Fpgkw_67ljICcU96ChFfZuFNxHwri6Tr29kY5qcljnyhIBZCZzhtJmyg4xkkj-xrmsbNAvjYdP0rfP-gJyj45b_2_qbwfoTuDDf87BPj57f1_LpD_lcSb24VDI9fkyCt7rtkWW1XxbcFk9TH1BaiJ8I09C1Ob0v94PbyWRP0WRWJIsgehPW8OvObccC4X062Xe')"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Dom Casmurro</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Machado de Assis</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-md text-label-md text-on-surface block">Thiago Ribeiro</span>
+<span class="font-body-sm text-body-sm text-secondary">Niterói, RJ</span>
+</td>
+<td class="py-3.5 px-3">
+<a class="flex items-center gap-1 font-body-sm text-body-sm text-secondary hover:text-primary" href="https://wa.me/5521998812233" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-[#25D366]">chat</span>
+                    (21) 99881
+                  </a>
+</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">20 Out 2024</td>
+<td class="py-3.5 px-3 font-label-md text-label-md text-on-surface font-medium">03 Nov 2024</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">1 dia</td>
+<td class="py-3.5 px-3">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm whitespace-nowrap">Emprestado</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm transition-colors" onclick="registerReturn('Dom Casmurro', 'Thiago Ribeiro')" type="button">
+                    Devolver
+                  </button>
+</td>
+</tr>
+<!-- Row 4: Pending Request -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-11 bg-surface-container rounded shrink-0 overflow-hidden shadow-xs">
+<div class="w-full h-full bg-cover bg-center" data-alt="Miniature book cover A Hora da Estrela by Clarice Lispector classic modern literature book binding" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDEHxdtWe2ITPlTEowY0rVA02fQJZc-aeTQUkMTySmQ89Q-16gbCDGlMqpO4KPFWn3xCBK2kfS9X_f9OrtVctgG5_VkG6PiQca1EhVooDD3CMaCFqauYcg5jgUVU-oXP2Zi2KfCzm8PdZ5SET6x9wonop9QeEJisMYUEKCzc55meapkhelFVf9SAeuFGjjKGqPiT67PxS_8ptTOXrI7iWOJoTd_tKjbi1PRxcHyo_42h6QZmyecmi9g')"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">A Hora da Estrela</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Clarice Lispector</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-md text-label-md text-on-surface block">Beatriz Farias</span>
+<span class="font-body-sm text-body-sm text-secondary">Curitiba, PR</span>
+</td>
+<td class="py-3.5 px-3">
+<a class="flex items-center gap-1 font-body-sm text-body-sm text-secondary hover:text-primary" href="https://wa.me/5541991283344" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-[#25D366]">chat</span>
+                    (41) 99128
+                  </a>
+</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">Aguardando</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-secondary">--</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">Solicitado hoje</td>
+<td class="py-3.5 px-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap">Pendente</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm transition-colors" onclick="approveRequest('A Hora da Estrela', 'Beatriz Farias')" type="button">
+                    Liberar
+                  </button>
+</td>
+</tr>
+<!-- Row 5: Pending Request -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-11 bg-surface-container rounded shrink-0 overflow-hidden shadow-xs">
+<div class="w-full h-full bg-cover bg-center" data-alt="Miniature book cover Grande Sertão: Veredas by Guimarães Rosa leather bound typography design" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBQmbKIk_KvcS9EpZEkPz05ymilkXrLfV2JhW7aylw5YlyoSnP-MbyY24jkbRM9YRP6XV7b0bmgvjQQbpQDCuZZwqjoDQE8laWJ7_sdK24qk-cE64OCsA35zD00PGMA6PjrjKDpn6erFuGwFD_FF7ec3F8QNu6h1aUfwOOIr7OhBPyOxkRVoTjDX83eudqyXecoqybcfyiogXvakUyWrNXS1F9qyQfx0Ka0-s1Z-f0vrvvbBoO2RgOV')"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Grande Sertão: Veredas</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Guimarães Rosa</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-md text-label-md text-on-surface block">Mariana Costa</span>
+<span class="font-body-sm text-body-sm text-secondary">Belo Horizonte, MG</span>
+</td>
+<td class="py-3.5 px-3">
+<a class="flex items-center gap-1 font-body-sm text-body-sm text-secondary hover:text-primary" href="https://wa.me/5531988887766" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-[#25D366]">chat</span>
+                    (31) 98888
+                  </a>
+</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">Aguardando</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-secondary">--</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">Solicitado ontem</td>
+<td class="py-3.5 px-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap">Pendente</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm transition-colors" onclick="approveRequest('Grande Sertão: Veredas', 'Mariana Costa')" type="button">
+                    Liberar
+                  </button>
+</td>
+</tr>
+<!-- Row 6: Returned History Item -->
+<tr class="hover:bg-surface-container-low/60 transition-colors opacity-80">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-11 bg-surface-container rounded shrink-0 overflow-hidden shadow-xs">
+<div class="w-full h-full bg-cover bg-center" data-alt="Miniature book cover Capitães da Areia by Jorge Amado in warm paper tone book sleeve" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAF3tUwbXoWTkiEVFXNFhs7ZIP5VttO6SOC4Bs5hIzmUzo2DpSn6RsSJCrxagLSKnipSmqhGMR7q48Ri5vPQXUQ1t0-SBFubMIYV-hwjXw-1jJsH0quKV6fktjWCyau3D5GeOb1JEp--LFW1WMl9CHWANfd3-skGwM-JOjbDWycWufDA7w7q4WlI1dIVJ0pU3wn5edF0ULTISkjqemKHrcHZnV_M_eQRW3nPhOraGgj4maEzHz3d5kb')"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Capitães da Areia</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Jorge Amado</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-md text-label-md text-on-surface block">Eduardo Silveira</span>
+<span class="font-body-sm text-body-sm text-secondary">Salvador, BA</span>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-body-sm text-body-sm text-secondary">(71) 99182</span>
+</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">01 Out 2024</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-on-surface-variant">15 Out 2024</td>
+<td class="py-3.5 px-3 font-body-sm text-body-sm text-secondary">Devolvido (14d)</td>
+<td class="py-3.5 px-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm whitespace-nowrap">Concluído</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2 py-1 text-secondary hover:text-on-surface transition-colors" title="Ver Comprovante" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="flex items-center justify-between px-4 py-3 bg-surface-container-low font-body-sm text-body-sm text-secondary">
+<span>Mostrando <strong>1 - 6</strong> de <strong>42</strong> empréstimos registrados</span>
+<div class="flex items-center gap-1">
+<button class="w-7 h-7 rounded-md bg-surface-container-lowest flex items-center justify-center text-secondary hover:text-on-surface transition-colors" disabled="" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<span class="px-2 font-label-sm text-label-sm text-on-surface">Página 1 de 7</span>
+<button class="w-7 h-7 rounded-md bg-surface-container-lowest flex items-center justify-center text-secondary hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Return Confirmation Feedback Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-surface-container-lowest text-on-surface p-4 rounded-xl shadow-xl flex items-center gap-3" id="toast-notification">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface" id="toast-title">Ação realizada</span>
+<span class="font-body-sm text-body-sm text-secondary" id="toast-message">Devolução anotada com sucesso.</span>
+</div>
+</div>
+<script>
+    function showToast(title, message) {
+      const toast = document.getElementById('toast-notification');
+      const titleEl = document.getElementById('toast-title');
+      const msgEl = document.getElementById('toast-message');
+      
+      titleEl.innerText = title;
+      msgEl.innerText = message;
+      
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+
+    function registerReturn(bookTitle, borrower) {
+      showToast('Devolução Registrada', bookTitle + ' devolvido por ' + borrower + '. Acervo atualizado.');
+    }
+
+    function approveRequest(bookTitle, borrower) {
+      showToast('Empréstimo Aprovado', 'Retirada confirmada para ' + borrower + ' (' + bookTitle + ').');
+    }
+
+    function exportReport() {
+      showToast('Exportação Iniciada', 'Gerando arquivo CSV consolidado de empréstimos...');
+    }
+
+    function switchTab(type) {
+      const tabs = ['active', 'pending', 'history'];
+      tabs.forEach(t => {
+        const btn = document.getElementById('tab-' + t);
+        if (t === type) {
+          btn.className = 'tab-btn px-4 py-2 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary shadow-sm transition-colors whitespace-nowrap';
+        } else {
+          btn.className = 'tab-btn px-4 py-2 rounded-lg font-label-md text-label-md bg-transparent text-secondary hover:bg-surface-container-high transition-colors whitespace-nowrap';
+        }
+      });
+      showToast('Filtro Aplicado', 'Visualização alterada para aba: ' + type.toUpperCase());
+    }
+  </script>
+</div></main></div></body></html>

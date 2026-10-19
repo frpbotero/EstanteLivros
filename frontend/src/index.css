@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-background font-sans text-body-md text-on-surface antialiased;
+    overscroll-behavior: none;
+  }
+  ::selection {
+    @apply bg-secondary-container;
+  }
+}
+
+@layer components {
+  .icon {
+    font-family: "Material Symbols Outlined";
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    direction: ltr;
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    user-select: none;
+  }
+  .icon-fill {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+
+  .card {
+    @apply rounded-xl bg-surface-container-lowest shadow-card;
+  }
+  .eyebrow {
+    @apply text-label-sm uppercase tracking-widest text-secondary;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl px-4 py-2.5 text-label-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-primary-container/25 disabled:pointer-events-none disabled:opacity-60;
+  }
+  .btn-primary {
+    @apply btn bg-primary-container text-on-primary shadow-card hover:bg-primary;
+  }
+  .btn-secondary {
+    @apply btn bg-surface-container text-on-surface hover:bg-surface-container-high;
+  }
+  .btn-ghost {
+    @apply btn bg-transparent text-primary-container hover:bg-surface-container-low;
+  }
+  .btn-alert {
+    @apply btn bg-status-overdue-bg text-tertiary hover:bg-tertiary-fixed;
+  }
+  .btn-icon {
+    @apply inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-on-surface-variant transition-colors hover:bg-surface-container-high;
+  }
+
+  .field-label {
+    @apply mb-1.5 flex items-center justify-between text-label-sm uppercase tracking-wider text-on-surface-variant;
+  }
+  .field {
+    @apply flex h-12 w-full items-center gap-3 rounded-xl border border-transparent bg-surface-container-low px-4 text-body-lg text-on-surface transition-[border-color,box-shadow,background-color];
+  }
+  .field:focus-within {
+    @apply border-primary-container bg-surface-container-lowest ring-[3px] ring-primary-container/15;
+  }
+  .field > input,
+  .field > select {
+    @apply h-full min-w-0 flex-1 border-none bg-transparent p-0 outline-none placeholder:text-outline;
+  }
+  .field > .icon {
+    @apply text-[20px] text-secondary;
+  }
+  .textarea {
+    @apply w-full rounded-xl border border-transparent bg-surface-container-low p-4 text-body-lg text-on-surface outline-none transition-[border-color,box-shadow] placeholder:text-outline focus:border-primary-container focus:bg-surface-container-lowest focus:ring-[3px] focus:ring-primary-container/15;
+  }
+
+  .chip {
+    @apply inline-flex shrink-0 items-center gap-1.5 rounded-full border border-hairline px-3 py-1.5 text-label-md text-status-pending transition-colors hover:bg-surface-container-low;
+  }
+  .chip-active {
+    @apply border-primary-container bg-primary-container text-on-primary hover:bg-primary-container;
+  }
+
+  .pill {
+    @apply inline-flex max-w-full items-center gap-1 truncate rounded-full px-2.5 py-1 text-label-sm;
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.Toastify__toast {
+  @apply rounded-xl font-sans text-body-md text-on-surface shadow-raised;
+}
