@@ -97,6 +97,14 @@
       
 
 
+<h3>Com Docker</h3>
+
+`$ cp .env.example .env` (defina `JWT_SECRET`; `GOOGLE_CLIENT_ID` é opcional)
+
+`$ docker compose up -d --build`
+
+Frontend em http://localhost:5173 e API em http://localhost:3333. Cada usuário cria a própria conta e tem um link público em `/u/<slug>`.
+
 <h2 id="tecnologias">Tecnologias</h2>
   <ul>
   <li>React</li>

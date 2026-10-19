@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'tertiary-fixed': '#ffdad7', 'on-background': '#151d1b', 'secondary-fixed-dim': '#accdc5', 'surface-variant': '#dce4e1', 'tertiary-container': '#9d2728', 'surface-container-lowest': '#ffffff', 'secondary': '#45645d', 'on-secondary-fixed': '#00201b', 'tertiary': '#7c0d14', 'outline-variant': '#bec9c6', 'on-secondary-fixed-variant': '#2e4c46', 'secondary-container': '#c8eae1', 'on-error': '#ffffff', 'surface-container-high': '#e2eae7', 'on-primary-fixed-variant': '#005048', 'on-surface': '#151d1b', 'primary-fixed-dim': '#8ad4c8', 'surface': '#f3fbf8', 'on-secondary': '#ffffff', 'surface-container': '#e7f0ec', 'inverse-on-surface': '#eaf3ef', 'tertiary-fixed-dim': '#ffb3ae', 'on-tertiary-fixed-variant': '#8b191d', 'on-error-container': '#93000a', 'on-tertiary': '#ffffff', 'outline': '#6f7977', 'inverse-surface': '#2a3230', 'background': '#f3fbf8', 'surface-dim': '#d3dcd9', 'on-primary-fixed': '#00201c', 'error-container': '#ffdad6', 'on-primary': '#ffffff', 'primary-container': '#005f56', 'surface-bright': '#f3fbf8', 'surface-container-highest': '#dce4e1', 'surface-tint': '#176a60', 'primary-fixed': '#a6f1e4', 'on-tertiary-container': '#ffb6b1', 'on-secondary-container': '#4b6a63', 'secondary-fixed': '#c8eae1', 'on-surface-variant': '#3f4947', 'on-tertiary-fixed': '#410004', 'error': '#ba1a1a', 'on-primary-container': '#8cd6ca', 'primary': '#00453e', 'surface-container-low': '#edf5f2', 'inverse-primary': '#8ad4c8' }, borderRadius: { DEFAULT: '0.25rem', lg: '0.5rem', xl: '0.75rem', full: '9999px' }, spacing: { 'space-lg': '1.5rem', 'space-xl': '2.5rem', 'space-xs': '0.25rem', 'margin-desktop': '2.5rem', 'space-sm': '0.5rem', 'space-md': '1rem', 'gutter': '1rem', 'gutter-desktop': '1.5rem', 'margin': '1rem' }, fontFamily: { 'label-lg': ['Plus Jakarta Sans'], 'headline-lg-mobile': ['Newsreader'], 'body-md': ['Plus Jakarta Sans'], 'headline-sm': ['Newsreader'], 'body-lg': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'headline-xl': ['Newsreader'], 'headline-md': ['Newsreader'], 'label-md': ['Plus Jakarta Sans'], 'label-sm': ['Plus Jakarta Sans'], 'headline-lg': ['Newsreader'], 'headline-xl-mobile': ['Newsreader'] }, fontSize: { 'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.01em', fontWeight: '600' }], 'headline-lg-mobile': ['24px', { lineHeight: '32px', letterSpacing: '-0.01em', fontWeight: '600' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'headline-sm': ['18px', { lineHeight: '24px', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }], 'headline-xl': ['40px', { lineHeight: '48px', letterSpacing: '-0.02em', fontWeight: '600' }], 'headline-md': ['22px', { lineHeight: '28px', fontWeight: '600' }], 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.02em', fontWeight: '600' }], 'label-sm': ['10px', { lineHeight: '14px', letterSpacing: '0.04em', fontWeight: '700' }], 'headline-lg': ['32px', { lineHeight: '40px', letterSpacing: '-0.015em', fontWeight: '600' }], 'headline-xl-mobile': ['30px', { lineHeight: '36px', letterSpacing: '-0.01em', fontWeight: '600' }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom, 0px) + 0.5rem);}.pt-safe{padding-top:env(safe-area-inset-top, 0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,40,35,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Bookstore Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYDwWD87ngVPjexxbjME1OoDXACKxe3ndgGCl0zERgEU37OT42wte1rW2JLgG2GMNtmQKSJ6Z5RjfaL8-9jHWivzSUttYzPbUfaq7XEERwqUKxNwvGSgBbC1CXWnUUeQm4D9D2Fw353po9TfZPNL6sR93MiVyH9HBLswmw6dv25JN3B0ome8nsKOldJ59sAs0B182l3SUkv6Gp0Q-35flGN2Ag-WxjZHmNFpLXKwlTJLg1Mxr3YVWF"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">Bookstore</span><span class="font-body-sm text-body-sm text-secondary truncate max-w-[140px]">Acervo</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Copiar link público" class="w-11 h-11 flex items-center justify-center rounded-full text-secondary hover:text-primary hover:bg-secondary-container/30 transition-colors"><span class="material-symbols-outlined text-[20px]">share</span></button><div class="flex items-center gap-space-xs pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-sm text-label-sm text-secondary uppercase">Olá,</span><span class="font-label-md text-label-md text-on-surface leading-tight font-semibold">Felipe</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkSl_PXkz5U3KWFG9nIuQwFptZfohqfngUT1hDBJr4JKHbhTcxVXVz5Iia_Lb5Au9ZpibHyXRHCj4yU_3fPBTQK1J56JoMAEAO9FNUqqqgJfJU0BDIXWTGptmrbI5yI6qbZcnx0_BCqzEHLlSkhvxfldGXHkNMQ3B_jYDgkW96bYVI69XyHrJhLpMcD7RTTK38i6U-NMe4Kfb9YQQvkRiQnXHjqmQZohaulyHDgr0vb_2REIPzcqFE"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Toast Notification Pill for Link Copy -->
+<div class="fixed top-20 inset-x-4 z-50 transition-all duration-300 transform -translate-y-6 opacity-0 pointer-events-none flex justify-center" id="toast-link">
+<div class="bg-primary text-on-primary px-space-md py-space-sm rounded-full shadow-lg flex items-center gap-space-sm text-label-md font-label-md">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Link público copiado: bookstore.app/u/felipe-botero</span>
+</div>
+</div>
+<!-- Top Hero / Quick Management Strip -->
+<section class="px-margin pt-space-md pb-space-sm flex flex-col gap-space-md">
+<!-- Status & Public Share Banner Card -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">library_books</span>
+</div>
+<div class="flex flex-col">
+<h1 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Biblioteca Pessoal</h1>
+<span class="font-body-sm text-body-sm text-secondary">12 títulos catalogados</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 bg-primary-fixed text-on-primary-fixed px-space-sm py-1 rounded-full font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+<span>Ativo</span>
+</div>
+</div>
+<!-- Quick Action Pills Row -->
+<div class="flex items-center gap-space-sm pt-space-xs overflow-x-auto no-scrollbar">
+<button class="flex-1 bg-surface-container-lowest hover:bg-surface-variant text-on-surface font-label-md text-label-md py-2.5 px-space-sm rounded-lg shadow-sm flex items-center justify-center gap-space-xs transition-colors" id="btn-copy-public">
+<span class="material-symbols-outlined text-[16px] text-primary">content_copy</span>
+<span class="truncate">/u/felipe-botero</span>
+</button>
+<button class="bg-surface-container-lowest hover:bg-surface-variant text-secondary font-label-md text-label-md py-2.5 px-space-md rounded-lg shadow-sm flex items-center gap-space-xs transition-colors whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]">insights</span>
+<span>Relatório</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Search & Filter Controls -->
+<section class="px-margin pt-space-xs pb-space-sm flex flex-col gap-space-sm sticky top-16 z-30 bg-surface/90 backdrop-blur-md">
+<!-- Search Bar -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-secondary">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-12 pl-10 pr-10 bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-md font-body-md rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 transition-all" id="catalog-search" placeholder="Buscar por título ou autor..." type="text"/>
+<button class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-outline hover:text-on-surface opacity-0 pointer-events-none transition-opacity" id="search-clear-btn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Filter Chips Horizontal Slider -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar pt-1">
+<button class="filter-chip px-space-md py-1.5 rounded-full font-label-md text-label-md whitespace-nowrap transition-all bg-primary text-on-primary shadow-sm" data-filter="all">
+        Todos (12)
+      </button>
+<button class="filter-chip px-space-md py-1.5 rounded-full font-label-md text-label-md whitespace-nowrap transition-all bg-surface-container-high text-secondary hover:text-on-surface" data-filter="available">
+        Disponíveis (9)
+      </button>
+<button class="filter-chip px-space-md py-1.5 rounded-full font-label-md text-label-md whitespace-nowrap transition-all bg-surface-container-high text-secondary hover:text-on-surface" data-filter="borrowed">
+        Emprestados (3)
+      </button>
+<button class="filter-chip px-space-md py-1.5 rounded-full font-label-md text-label-md whitespace-nowrap transition-all bg-surface-container-high text-secondary hover:text-on-surface" data-filter="recent">
+        Recentes
+      </button>
+</div>
+</section>
+<!-- Collection List / Cards -->
+<section class="px-margin pt-space-xs pb-space-xl flex flex-col gap-space-md">
+<!-- Card 1: Dom Casmurro (Disponível) -->
+<article class="book-item bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex gap-space-md items-start relative overflow-hidden transition-transform active:scale-[0.99]" data-author="machado de assis" data-status="available" data-title="dom casmurro">
+<div class="w-20 h-28 flex-shrink-0 rounded-lg overflow-hidden shadow-md relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Classic book cover edition of Dom Casmurro by Machado de Assis, rich dark emerald spine and vintage cream typography, Brazilian literary masterpiece aesthetic, warm natural library lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNYy0Xtl43gKrtQcGXXCCvQkA3r91Yf-IEwkINtRirscLOu56wsaKX_CHCihYErascyRhiJqpyI6Frz7pyn8LW0lRDXdZFfIEGR5DBFL9nBUwlMoiFVmVWXiUh3uuhNNPHfG-Us8wok0TJnlgNLGW7UkMUBq9A91UX8H4HTPXlByAG3BU6jlZKbc9QKNM0N2rhItzZRv6ur0IOUy63ruyUjiE4i96CwPwhD61DsT_byseNhgJO8ITc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between self-stretch">
+<div class="flex flex-col">
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+              Disponível
+            </span>
+<button aria-label="Mais opções" class="text-outline hover:text-on-surface p-1 rounded-full">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Dom Casmurro</h2>
+<p class="font-body-sm text-body-sm text-secondary truncate">Machado de Assis</p>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">256 págs · Clássico</span>
+</div>
+<div class="pt-2 flex items-center justify-end">
+<button class="px-3 py-1.5 bg-primary-container text-on-primary rounded-lg font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:opacity-90">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+<span>Emprestar</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: O Pequeno Príncipe (Emprestado) -->
+<article class="book-item bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex gap-space-md items-start relative overflow-hidden transition-transform active:scale-[0.99]" data-author="antoine de saint-exupéry" data-status="borrowed" data-title="o pequeno príncipe">
+<div class="w-20 h-28 flex-shrink-0 rounded-lg overflow-hidden shadow-md relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Artistic book cover of The Little Prince showing an illustrative watercolor starry night, small golden-haired prince standing on an asteroid, poetic French literature style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0pZTV8gefTTrdHMRElce6ALr0ttZaJ3DXaegNEPlmWpnPMmP2yV5Ml_yvw4LXCCfriiS34YXmEvo9yABmSEXWSnki6MTdPPjQAwZVErzZaQgB11G4UT8S1L6ga279pF4v5xS-YCqxKU-mHsBekCdTb8CxNs4TLrpdl-8schj24o5rpcJxQ8RT6CBKTXQ7oS0iz7neWOKbf4jOv1qCwYmWyuPBjD8gC7gcXTPSv7dkl3kJUjwnFujA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between self-stretch">
+<div class="flex flex-col">
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">schedule</span>
+              Emprestado: Mariana S.
+            </span>
+<button aria-label="Mais opções" class="text-outline hover:text-on-surface p-1 rounded-full">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">O Pequeno Príncipe</h2>
+<p class="font-body-sm text-body-sm text-secondary truncate">Antoine de Saint-Exupéry</p>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">96 págs · Devolução em 5 dias</span>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-secondary italic">Desde 12 de Out</span>
+<button class="px-2.5 py-1 bg-surface-container-high text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-1 hover:bg-surface-variant">
+<span>Detalhes</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: 1984 (Disponível) -->
+<article class="book-item bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex gap-space-md items-start relative overflow-hidden transition-transform active:scale-[0.99]" data-author="george orwell" data-status="available" data-title="1984">
+<div class="w-20 h-28 flex-shrink-0 rounded-lg overflow-hidden shadow-md relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Dystopian book cover of 1984 by George Orwell, bold constructivist geometric eye motif, deep teal and warm graphite charcoal accents, high-contrast typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeCScmGhGDpNc0CZv0K_R83TWQTu2ao1A_GEOaaXNrjGVmIHcM5gjvRFSevVigv7flEUk3CSiLj9fqE7ykpn9pAJ7Pj2IUlIC_yiNv8CEgfbOOya2pXmWcIhXurND63SBnVzXUO_gKO3IL07d1rH6BKbBH9mEeAEcOW0lHJ4FgerowoLFXhKwjXGcutfpIG5VXbLkX2UNehWd-eb3eilIOtKpjqRrpjhFLVmprRcUvwIuPw1UJ9y2g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between self-stretch">
+<div class="flex flex-col">
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+              Disponível
+            </span>
+<button aria-label="Mais opções" class="text-outline hover:text-on-surface p-1 rounded-full">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">1984</h2>
+<p class="font-body-sm text-body-sm text-secondary truncate">George Orwell</p>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">336 págs · Ficção Científica</span>
+</div>
+<div class="pt-2 flex items-center justify-end">
+<button class="px-3 py-1.5 bg-primary-container text-on-primary rounded-lg font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:opacity-90">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+<span>Emprestar</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 4: Cem Anos de Solidão (Atrasado) -->
+<article class="book-item bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex gap-space-md items-start relative overflow-hidden transition-transform active:scale-[0.99]" data-author="gabriel garcía márquez" data-status="borrowed" data-title="cem anos de solidão">
+<div class="w-20 h-28 flex-shrink-0 rounded-lg overflow-hidden shadow-md relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Magical realism book cover of One Hundred Years of Solitude by Gabriel Garcia Marquez, rich tropical foliage, subtle golden yellow butterflies, warm sunlit Latin American mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX_SaL8xKtuksy5sGFSvCYhPNIht5QEWU4BXgqL9jc-qMui_IFRu3gE2CVT8QtAt2Knqte7YfhL7r1b3bPIpOL5V2pVSz8X3jRiX80-E-_FRODcZ8csysiycc44G4R75C0krcf3EMSuo0hxfZxIlqUY-JEhah_mlVs_221fGLnVD1GEeeLUHbsH16BpNklGTKIJ1FjNHfYOratJgI052pxKQkmneTuNzUUNba7BbBvuqPl_zgFYiYw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between self-stretch">
+<div class="flex flex-col">
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[12px] text-error">warning</span>
+              Atrasado: Lucas M. (12 dias)
+            </span>
+<button aria-label="Mais opções" class="text-outline hover:text-on-surface p-1 rounded-full">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Cem Anos de Solidão</h2>
+<p class="font-body-sm text-body-sm text-secondary truncate">Gabriel García Márquez</p>
+<span class="font-label-sm text-label-sm text-tertiary mt-0.5">448 págs · Prazo vencido há 12d</span>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<button class="px-2.5 py-1 bg-tertiary text-on-tertiary rounded-lg font-label-md text-label-md flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">notifications_active</span>
+<span>Cobrar</span>
+</button>
+<button class="px-2.5 py-1 bg-surface-container-high text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-1 hover:bg-surface-variant">
+<span>Devolver</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 5: Sapiens (Disponível) -->
+<article class="book-item bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex gap-space-md items-start relative overflow-hidden transition-transform active:scale-[0.99]" data-author="yuval noah harari" data-status="available" data-title="sapiens: uma breve história da humanidade">
+<div class="w-20 h-28 flex-shrink-0 rounded-lg overflow-hidden shadow-md relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Modern editorial non-fiction book cover of Sapiens by Yuval Noah Harari with a golden prehistoric fingerprint on pure textured ivory paper, sophisticated minimalist typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU9P9o3xAJonz4vZ3-BNXM2RXk8W0DmnuJ67cKGMa7pYJyleX4q38gZBeToGL8KMbfjPCvYlzOQUnRMMGwAh3hJq-RFTStQpPS3J9763nDJjqwelWa-nTN4gnwpgwYrJct5YRkipY4Pc4wOcCYIjLbgWneHPoIQlOsZEnIo6L897pieQKL4MDROi1ZeVVh0T_NLc_2JfTeBgBA6tM6lf8Rj39gC384kR9sKNT_7IAM5SJS52HLtb8R"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between self-stretch">
+<div class="flex flex-col">
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+              Disponível
+            </span>
+<button aria-label="Mais opções" class="text-outline hover:text-on-surface p-1 rounded-full">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Sapiens: Uma Breve História...</h2>
+<p class="font-body-sm text-body-sm text-secondary truncate">Yuval Noah Harari</p>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">464 págs · História &amp; Antropologia</span>
+</div>
+<div class="pt-2 flex items-center justify-end">
+<button class="px-3 py-1.5 bg-primary-container text-on-primary rounded-lg font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:opacity-90">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+<span>Emprestar</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Empty Search State Placeholder (hidden by default) -->
+<div class="hidden flex-col items-center justify-center py-space-xl px-space-md text-center bg-surface-container-low rounded-xl" id="search-empty-state">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-primary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Nenhum livro encontrado</h3>
+<p class="font-body-sm text-body-sm text-secondary max-w-xs mt-1">
+        Não localizamos correspondências para o termo pesquisado. Tente outro título ou autor.
+      </p>
+</div>
+</section>
+<!-- Sticky Floating Action Button (FAB) for adding new book -->
+<aside class="fixed right-4 bottom-20 z-40">
+<button aria-label="Adicionar Livro" class="flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary px-space-md py-3.5 rounded-full shadow-lg active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[22px]">add</span>
+<span class="font-label-lg text-label-lg pr-1">Adicionar</span>
+</button>
+</aside>
+</div>
+<script>
+  // Micro-interaction: Copy Public Link with Toast feedback
+  const copyBtn = document.getElementById('btn-copy-public');
+  const toast = document.getElementById('toast-link');
+
+  if (copyBtn && toast) {
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard?.writeText('https://bookstore.app/u/felipe-botero');
+      toast.classList.remove('-translate-y-6', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('-translate-y-6', 'opacity-0', 'pointer-events-none');
+      }, 2400);
+    });
+  }
+
+  // Filter chips selection & filter logic
+  const filterChips = document.querySelectorAll('.filter-chip');
+  const bookItems = document.querySelectorAll('.book-item');
+  const searchInput = document.getElementById('catalog-search');
+  const searchClear = document.getElementById('search-clear-btn');
+  const emptyState = document.getElementById('search-empty-state');
+
+  let currentFilter = 'all';
+
+  function applyFilters() {
+    const query = (searchInput?.value || '').toLowerCase().trim();
+    let visibleCount = 0;
+
+    bookItems.forEach((card) => {
+      const status = card.dataset.status;
+      const title = card.dataset.title || '';
+      const author = card.dataset.author || '';
+
+      const matchesStatus =
+        currentFilter === 'all' ||
+        (currentFilter === 'available' && status === 'available') ||
+        (currentFilter === 'borrowed' && status === 'borrowed') ||
+        currentFilter === 'recent';
+
+      const matchesSearch = !query || title.includes(query) || author.includes(query);
+
+      if (matchesStatus && matchesSearch) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (emptyState) {
+      if (visibleCount === 0) {
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      } else {
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+    }
+  }
+
+  filterChips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      filterChips.forEach((c) => {
+        c.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        c.classList.add('bg-surface-container-high', 'text-secondary');
+      });
+      chip.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      chip.classList.remove('bg-surface-container-high', 'text-secondary');
+
+      currentFilter = chip.dataset.filter || 'all';
+      applyFilters();
+    });
+  });
+
+  if (searchInput && searchClear) {
+    searchInput.addEventListener('input', () => {
+      if (searchInput.value.length > 0) {
+        searchClear.classList.remove('opacity-0', 'pointer-events-none');
+        searchClear.classList.add('opacity-100');
+      } else {
+        searchClear.classList.add('opacity-0', 'pointer-events-none');
+        searchClear.classList.remove('opacity-100');
+      }
+      applyFilters();
+    });
+
+    searchClear.addEventListener('click', () => {
+      searchInput.value = '';
+      searchClear.classList.add('opacity-0', 'pointer-events-none');
+      searchClear.classList.remove('opacity-100');
+      applyFilters();
+      searchInput.focus();
+    });
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,40,35,0.06)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 w-16 h-12 transition-colors text-primary font-semibold" data-path="acervo" href="#"><span class="material-symbols-outlined text-[24px]">auto_stories</span><span class="font-label-sm text-label-sm">Acervo</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-secondary transition-colors hover:text-primary" data-path="novo-livro" href="#"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">add</span></div><span class="font-label-sm text-label-sm -mt-1">Novo</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-secondary transition-colors hover:text-primary relative" data-path="emprestimos" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">swap_horiz</span><span class="absolute -top-1 -right-2 bg-tertiary text-on-tertiary font-label-sm text-[10px] w-4 h-4 rounded-full flex items-center justify-center leading-none font-bold">3</span></div><span class="font-label-sm text-label-sm">Empréstimos</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-secondary transition-colors hover:text-primary" data-path="publico" href="#"><span class="material-symbols-outlined text-[24px]">public</span><span class="font-label-sm text-label-sm">Público</span></a></div></nav></body></html>

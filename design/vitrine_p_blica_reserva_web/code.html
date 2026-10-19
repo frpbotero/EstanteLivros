@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#410004", "surface": "#f3fbf8", "secondary-fixed-dim": "#accdc5", "on-surface-variant": "#3f4947", "surface-container-low": "#edf5f2", "outline": "#6f7977", "surface-container-high": "#e2eae7", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "primary-fixed-dim": "#8ad4c8", "surface-container": "#e7f0ec", "on-secondary-fixed": "#00201b", "on-tertiary-container": "#ffb6b1", "on-primary-fixed": "#00201c", "surface-tint": "#176a60", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "tertiary": "#7c0d14", "tertiary-container": "#9d2728", "primary": "#00453e", "inverse-surface": "#2a3230", "inverse-primary": "#8ad4c8", "tertiary-fixed-dim": "#ffb3ae", "primary-container": "#005f56", "secondary": "#45645d", "surface-variant": "#dce4e1", "on-surface": "#151d1b", "surface-dim": "#d3dcd9", "on-primary-container": "#8cd6ca", "surface-bright": "#f3fbf8", "on-secondary-container": "#4b6a63", "secondary-container": "#c8eae1", "error": "#ba1a1a", "inverse-on-surface": "#eaf3ef", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#8b191d", "on-primary": "#ffffff", "outline-variant": "#bec9c6", "on-primary-fixed-variant": "#005048", "tertiary-fixed": "#ffdad7", "on-secondary-fixed-variant": "#2e4c46", "surface-container-highest": "#dce4e1", "background": "#f3fbf8", "on-secondary": "#ffffff", "primary-fixed": "#a6f1e4", "secondary-fixed": "#c8eae1", "on-background": "#151d1b" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "margin": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "gutter-desktop": "1.5rem", "margin-desktop": "2.5rem", "space-md": "1rem" }, "fontFamily": { "body-md": [ "Plus Jakarta Sans" ], "headline-lg": [ "Newsreader" ], "label-lg": [ "Plus Jakarta Sans" ], "headline-xl-mobile": [ "Newsreader" ], "headline-md": [ "Newsreader" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-xl": [ "Newsreader" ], "headline-sm": [ "Newsreader" ], "label-md": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Newsreader" ], "label-sm": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ] }, "fontSize": { "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "headline-xl-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">local_library</span></div><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Bookstore</span></div><nav class="hidden md:flex items-center gap-6" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="vitrine-publica" href="#">Vitrine de Livros</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="sobre-o-acervo" href="#">Sobre o Acervo</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="solicitar-emprestimo" href="#">Solicitar Empréstimo</a></nav><div class="flex items-center gap-4"><a class="font-label-lg text-label-lg text-primary hover:text-primary-container transition-colors" data-path="login" href="#">Acessar Painel</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background max-w-7xl mx-auto px-6 lg:px-12 py-8"><div class="flex flex-col w-full">
+<!-- Profile Showcase Header Bento -->
+<section class="relative w-full rounded-xl bg-surface-container-low p-8 lg:p-10 mb-12 shadow-sm overflow-hidden">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/4 -bottom-20 w-64 h-64 rounded-full bg-primary-fixed/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+<div class="relative">
+<div class="w-24 h-24 lg:w-28 lg:h-28 rounded-full overflow-hidden shadow-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait photograph of Felipe Botero, a warm and friendly Hispanic man in his late 30s with horn-rimmed glasses and a sage knitted sweater, smiling softly against a sunlit background filled with hardwood bookshelves and classic novels, rich cinematic grain, muted natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbPONygI3RsDIlUAcVc97ZHx2W--LYGnpmQ23iinnDgbH6E_J5Y4vjaJRSCjlIg704YxRTtYvtTYB7tYWLykokYSGLdF4ulDIIbEHfeYL-rdm7xhwKZ746h_6r1b6z2XRizFfqv5wUuKwYmPLwCXjvbhwZ8zPUs2eQ2PSMJbH6dfhDIl3uyMUGsvG8rilmYsRje0Gv0rG_7BwHbue3WVF2UXamk04WsgBird4vTFiR3_mzQXb_cQaU"/>
+</div>
+<span class="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm" title="Curador Verificado">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-3 flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-primary">Estante de Felipe Botero</h1>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+              São Paulo, SP • Biblioteca pessoal
+            </span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-xl">
+            Compartilhando leituras e histórias do meu acervo particular. Escolha uma edição e solicite um empréstimo sem burocracia!
+          </p>
+<div class="flex items-center gap-6 mt-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-lg text-label-lg text-primary">8 livros disponíveis para empréstimo</span>
+</div>
+<span class="text-outline-variant font-body-sm">•</span>
+<div class="flex items-center gap-1 text-secondary font-body-md text-body-md">
+<span class="material-symbols-outlined text-[18px]">sync_saved_locally</span>
+<span>19 empréstimos concluídos</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Cluster -->
+<div class="flex flex-wrap items-center gap-3 w-full sm:w-auto self-stretch sm:self-auto justify-end">
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-lg text-label-lg transition-all shadow-sm active:scale-95" id="shareCatalogBtn" onclick="copyCatalogLink()">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span id="shareBtnText">Compartilhar catálogo</span>
+</button>
+<a class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-all shadow-sm active:scale-95" href="#explore">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Explorar Acervo</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Filter & Catalog Section -->
+<div class="flex flex-col gap-8 scroll-mt-24" id="explore">
+<!-- Search & Filter Controls -->
+<div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
+<!-- Search Input -->
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-secondary text-[20px]">search</span>
+<input class="w-full h-12 pl-12 pr-4 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md shadow-sm outline-none focus:bg-surface-container-low transition-colors" id="bookSearchInput" oninput="filterBooks()" placeholder="Buscar por título, autor ou gênero..." type="text"/>
+</div>
+<!-- Pill Filters -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0 scrollbar-none" id="categoryFilterTrack">
+<button class="filter-chip px-4 py-2 rounded-lg font-label-md text-label-md transition-all whitespace-nowrap bg-primary-container text-on-primary shadow-sm" onclick="setFilter('Todos', this)">
+          Todos (10)
+        </button>
+<button class="filter-chip px-4 py-2 rounded-lg font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high" onclick="setFilter('Disponíveis', this)">
+          Disponíveis (8)
+        </button>
+<button class="filter-chip px-4 py-2 rounded-lg font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high" onclick="setFilter('Clássicos', this)">
+          Clássicos (4)
+        </button>
+<button class="filter-chip px-4 py-2 rounded-lg font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high" onclick="setFilter('Ficção', this)">
+          Ficção (3)
+        </button>
+<button class="filter-chip px-4 py-2 rounded-lg font-label-md text-label-md transition-all whitespace-nowrap bg-surface-container text-on-surface-variant hover:bg-surface-container-high" onclick="setFilter('Não-ficção', this)">
+          Não-ficção (3)
+        </button>
+</div>
+</div>
+<!-- Catalog Cards Grid (Desktop 4-col layout) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full" id="booksGrid">
+<!-- Book 1 -->
+<article class="book-card flex flex-col justify-between rounded-xl bg-surface-container-lowest p-4 shadow-sm hover:shadow-md transition-all group" data-author="Gabriel García Márquez" data-category="Ficção" data-status="available" data-title="Cem Anos de Solidão">
+<div class="flex flex-col">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden bg-surface-container mb-4 shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Editorial book cover for One Hundred Years of Solitude, featuring vintage mystical realism gold botanical illustrations, dense tropical foliage in deep emerald and warm parchment tones, elegant serif typography, physical paper texture with tactile spine crease." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoEgbAHkzUWPk7IKCOLGlGWjMfWIrEkfFDP7MEkaDwcu7vWmOfnonvoWzpybn5uVY-iXm8vTmhv1Z1l5MQblXEaTx_3Jm7GGa2vl6BFhK1dOc02_S8MFYZxLLnm4Iuqlp_1uqjMTEJ12WTKYhMYwi_13Yncp2Hd-TjDt868tLR3GM0S1HmeJWVVhBk6MVCtU6PGxOskslctTThQmJQ8aXRnCFFcpnx-_UPituDKtjI9IO6qc0Z5azF"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm shadow-sm backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Disponível
+              </span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Edição Especial de Capa Dura</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1 group-hover:text-primary transition-colors line-clamp-1">Cem Anos de Solidão</h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Gabriel García Márquez</p>
+<div class="flex items-center gap-2 mt-3 pt-3 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> 448 págs
+            </span>
+<span class="text-outline-variant font-body-sm">•</span>
+<span class="font-label-sm text-label-sm text-secondary">Estado impecável</span>
+</div>
+</div>
+<button class="mt-4 w-full py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1.5 shadow-sm active:scale-95" onclick="openLoanModal('Cem Anos de Solidão', 'Gabriel García Márquez', 'Edição Especial de Capa Dura')">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+          Pedir Emprestado
+        </button>
+</article>
+<!-- Book 2 -->
+<article class="book-card flex flex-col justify-between rounded-xl bg-surface-container-lowest p-4 shadow-sm hover:shadow-md transition-all group" data-author="Machado de Assis" data-category="Clássicos" data-status="available" data-title="Memórias Póstumas de Brás Cubas">
+<div class="flex flex-col">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden bg-surface-container mb-4 shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Editorial book cover of The Posthumous Memoirs of Bras Cubas by Machado de Assis, minimalist Brazilian literary classic design with subtle sepia typography, embossed emblem, soft linen paper texture, natural soft daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQTRk5GDcyTs1H-Ir0Ib642MUdDIOLeSXP2owLbIarHoOjN7dg-2Ei7T3_F_ulDMZ82MmmkwovTll-KCE68lXVKulqq-pCWzA86iE1ZfEfm7BhsG-vTOvCJq7eenUp0ml9t5_MCeCxm-Z7HvwtowdqiK4ypSe2HBhV6lOMsyQcN_Vo7TJDJeWWifxXzvYvMxa62TR8E4_PNOjHXHd-HSXbZhM4UhKy_8P2AHMhycQbyyrsaalr88K4"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm shadow-sm backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Disponível
+              </span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Antofágica • 1ª Reimpressão</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1 group-hover:text-primary transition-colors line-clamp-1">Memórias Póstumas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Machado de Assis</p>
+<div class="flex items-center gap-2 mt-3 pt-3 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> 368 págs
+            </span>
+<span class="text-outline-variant font-body-sm">•</span>
+<span class="font-label-sm text-label-sm text-secondary">Com ilustrações</span>
+</div>
+</div>
+<button class="mt-4 w-full py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1.5 shadow-sm active:scale-95" onclick="openLoanModal('Memórias Póstumas de Brás Cubas', 'Machado de Assis', 'Antofágica • 1ª Reimpressão')">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+          Pedir Emprestado
+        </button>
+</article>
+<!-- Book 3 -->
+<article class="book-card flex flex-col justify-between rounded-xl bg-surface-container-lowest p-4 shadow-sm hover:shadow-md transition-all group" data-author="Yuval Noah Harari" data-category="Não-ficção" data-status="borrowed" data-title="Sapiens: Uma Breve História da Humanidade">
+<div class="flex flex-col">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden bg-surface-container mb-4 shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90" data-alt="Modern graphic book cover of Sapiens A Brief History of Humankind by Yuval Noah Harari, clean stone-colored minimalist layout with a prominent ochre fingerprint emblem, elegant editorial typography, matte finish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkDScGaV7TLGrgYpWnmQMqQ7-r_Sqf-0TWghlqSMy3k7NBcHxe9DBdHLaYMwNd-Up2wgOBwx1k5Trsjxx6ptbpu8yzuAtNXTLcEbKNycM1W7eGOFc5qSishrIbZUmAQotz21hyqKW5gszu-8YuKBaunFcXbkC3-h-YSdKH0LEMzML9uGBctH2p4GsHrOpGhYYgh7I5ExESj6Js_WI7t_vtLXDJmSOVOcZqe3KuD8lXeiFzRxIfxRhT"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm shadow-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[14px] text-tertiary">schedule</span>
+                Emprestado • Volta em 12 dias
+              </span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Cia das Letras • Brochura</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1 group-hover:text-primary transition-colors line-clamp-1">Sapiens: Uma Breve História</h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Yuval Noah Harari</p>
+<div class="flex items-center gap-2 mt-3 pt-3 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> 464 págs
+            </span>
+<span class="text-outline-variant font-body-sm">•</span>
+<span class="font-label-sm text-label-sm text-secondary">Com anotações sutis</span>
+</div>
+</div>
+<button class="mt-4 w-full py-2.5 rounded-lg bg-surface-container text-outline font-label-lg text-label-lg cursor-not-allowed flex items-center justify-center gap-1.5" disabled="">
+<span class="material-symbols-outlined text-[18px]">lock_clock</span>
+          Indisponível no momento
+        </button>
+</article>
+<!-- Book 4 -->
+<article class="book-card flex flex-col justify-between rounded-xl bg-surface-container-lowest p-4 shadow-sm hover:shadow-md transition-all group" data-author="Han Kang" data-category="Ficção" data-status="available" data-title="A Vegetariana">
+<div class="flex flex-col">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden bg-surface-container mb-4 shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Editorial book cover of The Vegetarian by Han Kang, artistic botanical illustration with delicate watercolor foliage in soft mint and crimson wash, modern minimalist Korean literature design, clean typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXuDxDMfDlE1HHyEInvSxxsxChv23FocUUnouIpzmXQmlNGIIsil2VvdvNcE5pb2HkqfUs7l4fhNj4a5XaM29BFPC7BwAomZ0Zy1JSmzaKf9XjKXp3wHgqrqlsTU2N0NvKgT7agKZuOZ0BvZrr2mZ-OsJC_CzHtGVuO-e9XWdozknhhqLX_atgujEbrjGGU_6SB_cbuJfvGRKIF2xea-OGHAmbAy0jMvFPvF4sE6c66YFtwB0chF6U"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm shadow-sm backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Disponível
+              </span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Todavia • Edição 2021</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1 group-hover:text-primary transition-colors line-clamp-1">A Vegetariana</h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Han Kang</p>
+<div class="flex items-center gap-2 mt-3 pt-3 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> 176 págs
+            </span>
+<span class="text-outline-variant font-body-sm">•</span>
+<span class="font-label-sm text-label-sm text-secondary">Novo / Excelente</span>
+</div>
+</div>
+<button class="mt-4 w-full py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1.5 shadow-sm active:scale-95" onclick="openLoanModal('A Vegetariana', 'Han Kang', 'Todavia • Edição 2021')">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+          Pedir Emprestado
+        </button>
+</article>
+<!-- Book 5 -->
+<article class="book-card flex flex-col justify-between rounded-xl bg-surface-container-lowest p-4 shadow-sm hover:shadow-md transition-all group" data-author="Albert Camus" data-category="Clássicos" data-status="available" data-title="O Estrangeiro">
+<div class="flex flex-col">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden bg-surface-container mb-4 shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Editorial book cover of The Stranger by Albert Camus, Mediterranean sunlight high-contrast minimalist graphic aesthetic, warm sand yellow and deep dark green accents, French literature modern reissue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_meyz1w3VLaLef4wu2gVouvV0muzLD3Ee9SGa4UYCE82rkodm4e4xr74r16eHa_aZvStbhQNJIAeXxit5vVEFBOSyEf4e-V7iTZ9jv25bL6ueFiZRRhzliM9vRsNF6RpVfUZh-jqamLownAQK0wIMfGcajVa9XOmUJ7Iz_skRNoKBy0iDm8X8AUCZZtLqtq3e_fatDiziTC6lDHm8Umh_F8TGl6igGisvvzTo0PWFY0ICKFlEgzbs"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm shadow-sm backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Disponível
+              </span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Record • Edição Bolso de Luxo</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1 group-hover:text-primary transition-colors line-clamp-1">O Estrangeiro</h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Albert Camus</p>
+<div class="flex items-center gap-2 mt-3 pt-3 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> 128 págs
+            </span>
+<span class="text-outline-variant font-body-sm">•</span>
+<span class="font-label-sm text-label-sm text-secondary">Sem grifos</span>
+</div>
+</div>
+<button class="mt-4 w-full py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1.5 shadow-sm active:scale-95" onclick="openLoanModal('O Estrangeiro', 'Albert Camus', 'Record • Edição Bolso de Luxo')">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+          Pedir Emprestado
+        </button>
+</article>
+<!-- Book 6 -->
+<article class="book-card flex flex-col justify-between rounded-xl bg-surface-container-lowest p-4 shadow-sm hover:shadow-md transition-all group" data-author="Daniel Kahneman" data-category="Não-ficção" data-status="available" data-title="Pensando, Rápido e Devagar">
+<div class="flex flex-col">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden bg-surface-container mb-4 shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Editorial book cover of Thinking Fast and Slow by Daniel Kahneman, minimalist conceptual cover with two contrasting balanced pencils on a warm off-white linen background, rich tactile typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjQ0YXW4tF9ZPDm0Pxvh-oJU1TUbpnUWbM8WtK6vooSDEcFjMFanCymG0tH485ZRrEObEdkjo3uGxOB8yQoVZC-l3VRNBdzhPbNaNT17WP_64l_-otH1ZBphvR66Dsk0MhRw9JD5pnlmB-vb6boBgV3wxXPu7DHvW9tH2_jgn50uxS09MRtnViDOq-D5VjHSJayKZLJ7zR-LZ4S8WTTRv5svVWUvkRO1l0aqRs0YyyIza3E6lZHf3f"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm shadow-sm backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Disponível
+              </span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Objetiva • 1ª Edição</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1 group-hover:text-primary transition-colors line-clamp-1">Pensando, Rápido e Devagar</h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Daniel Kahneman</p>
+<div class="flex items-center gap-2 mt-3 pt-3 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> 608 págs
+            </span>
+<span class="text-outline-variant font-body-sm">•</span>
+<span class="font-label-sm text-label-sm text-secondary">Excelente conservação</span>
+</div>
+</div>
+<button class="mt-4 w-full py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1.5 shadow-sm active:scale-95" onclick="openLoanModal('Pensando, Rápido e Devagar', 'Daniel Kahneman', 'Objetiva • 1ª Edição')">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+          Pedir Emprestado
+        </button>
+</article>
+<!-- Book 7 -->
+<article class="book-card flex flex-col justify-between rounded-xl bg-surface-container-lowest p-4 shadow-sm hover:shadow-md transition-all group" data-author="José Saramago" data-category="Clássicos" data-status="borrowed" data-title="Ensaio Sobre a Cegueira">
+<div class="flex flex-col">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden bg-surface-container mb-4 shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90" data-alt="Editorial book cover for Blindness by Jose Saramago, high key white architectural aesthetic with subtle embossed typography and soft milky textures, award-winning literary cover style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIOnB_yd6XuOB5ZSaHgdo9OtfXdq43XLS9qNc8Op--L1e8sTEHcJTGyn9KtUuCPUM48zrMxr3hlFNIeL_6hDQhdP8BL4vQdejboe2_QzaqSemUqpeOZ39vIz1ggKaEymoMBc5xa3Kr58aRuHCkw0R8XoG3etqrai9_LsvbcFOslSwY9gjoZfoLVDDpSJegBnUg7WflfT9uwGfbQyw3cA8wfYZRXvfOehpxjahcN85Wu35ihwOhFxmX"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm shadow-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[14px] text-tertiary">schedule</span>
+                Emprestado • Volta em 5 dias
+              </span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Cia das Letras • Capa Dura</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1 group-hover:text-primary transition-colors line-clamp-1">Ensaio Sobre a Cegueira</h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">José Saramago</p>
+<div class="flex items-center gap-2 mt-3 pt-3 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> 312 págs
+            </span>
+<span class="text-outline-variant font-body-sm">•</span>
+<span class="font-label-sm text-label-sm text-secondary">Fita marcadora inclusa</span>
+</div>
+</div>
+<button class="mt-4 w-full py-2.5 rounded-lg bg-surface-container text-outline font-label-lg text-label-lg cursor-not-allowed flex items-center justify-center gap-1.5" disabled="">
+<span class="material-symbols-outlined text-[18px]">lock_clock</span>
+          Indisponível no momento
+        </button>
+</article>
+<!-- Book 8 -->
+<article class="book-card flex flex-col justify-between rounded-xl bg-surface-container-lowest p-4 shadow-sm hover:shadow-md transition-all group" data-author="Brené Brown" data-category="Não-ficção" data-status="available" data-title="A Coragem de Ser Imperfeito">
+<div class="flex flex-col">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden bg-surface-container mb-4 shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Editorial book cover of Daring Greatly by Brene Brown, warm earthen clay tones with hand-lettered bold typography, serene natural organic layout, soft matte paper quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqC1OOHn46BMAW758bkV4gKf-5xuN8TvPX1VPENvsnYqczD_xioGapeiaK6buPzkCtcT9c54EplEQd5ObYN0CjXXjqGzSrouMeJgeBb3vYNivCZ0Lyifwx3pYG4iMiwFwm2JfarQTdoJP4JPyaHCsi7XR07R0fDpInowlI0NjJR1ZqYESY2u-WFj9BnvMqo9xQqEpIehBT3xD1bwt3a0hn3GLH2pVezERBTeHjEJX6lC3kDCSqOCTl"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm shadow-sm backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Disponível
+              </span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Sextante • Edição Atualizada</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1 group-hover:text-primary transition-colors line-clamp-1">A Coragem de Ser Imperfeito</h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1">Brené Brown</p>
+<div class="flex items-center gap-2 mt-3 pt-3 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> 208 págs
+            </span>
+<span class="text-outline-variant font-body-sm">•</span>
+<span class="font-label-sm text-label-sm text-secondary">Em perfeito estado</span>
+</div>
+</div>
+<button class="mt-4 w-full py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1.5 shadow-sm active:scale-95" onclick="openLoanModal('A Coragem de Ser Imperfeito', 'Brené Brown', 'Sextante • Edição Atualizada')">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+          Pedir Emprestado
+        </button>
+</article>
+</div>
+<!-- Empty State Notification -->
+<div class="hidden flex-col items-center justify-center py-16 text-center" id="noResultsState">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-secondary mb-4">
+<span class="material-symbols-outlined text-[32px]">menu_book</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Nenhum livro encontrado</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Tente ajustar seus termos de busca ou mudar a categoria selecionada.</p>
+<button class="mt-4 px-4 py-2 rounded-lg bg-surface-container-highest text-primary font-label-lg text-label-lg" onclick="resetFilters()">
+        Limpar filtros
+      </button>
+</div>
+</div>
+<!-- Lending Rules & How it Works Strip -->
+<section class="mt-16 rounded-xl bg-surface-container p-8 shadow-sm">
+<div class="max-w-3xl">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Como Funciona o Acervo</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-1">Regras simples de convivência e empréstimo</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+<div class="flex gap-4 items-start p-4 rounded-lg bg-surface-container-lowest">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Prazo de 21 dias</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tempo suficiente para uma leitura proveitosa, renovável se ninguém estiver na fila.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start p-4 rounded-lg bg-surface-container-lowest">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">pin_drop</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Retirada em Pinheiros</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Encontro presencial em café ou entrega na portaria com horário combinado via WhatsApp.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start p-4 rounded-lg bg-surface-container-lowest">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">volunteer_activism</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Cuidado mútuo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Trate cada exemplar com o mesmo afeto com que você gostaria que cuidassem do seu.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Conversion Banner -->
+<section class="mt-16 rounded-xl bg-primary text-on-primary p-8 lg:p-12 shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="relative z-10 max-w-xl">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-primary-fixed font-label-sm text-label-sm mb-4">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span>
+        Comunidade Bookstore
+      </span>
+<h3 class="font-headline-lg text-headline-lg text-on-primary leading-tight">
+        Gostou da ideia? Monte a sua própria estante virtual no Bookstore.
+      </h3>
+<p class="font-body-lg text-body-lg text-surface-variant mt-3">
+        Organize seus livros, compartilhe seu catálogo com amigos do bairro ou colegas de trabalho e controle devoluções automaticamente.
+      </p>
+</div>
+<div class="relative z-10 flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg hover:bg-on-primary transition-all shadow-md active:scale-95" href="#">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+        Criar conta gratuita
+      </a>
+</div>
+<!-- Decorative subtle swirl -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-primary-container/30 blur-3xl pointer-events-none"></div>
+</section>
+<!-- Interactive Loan Request Modal (Preview / Modal) -->
+<div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-background/50 backdrop-blur-sm hidden opacity-0 transition-opacity duration-200" id="loanModal" role="dialog">
+<div class="relative w-full max-w-lg bg-surface-container-lowest rounded-xl shadow-2xl p-6 lg:p-8 overflow-hidden transform scale-95 transition-transform duration-200" id="loanModalContent">
+<!-- Close button -->
+<button class="absolute top-5 right-5 w-8 h-8 rounded-full bg-surface-container-high hover:bg-surface-variant flex items-center justify-center text-on-surface-variant transition-colors" onclick="closeLoanModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<!-- Modal Header -->
+<div class="flex items-start gap-4 mb-6">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">book_online</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Solicitação de Empréstimo</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-0.5 line-clamp-1" id="modalBookTitle">Título do Livro</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="modalBookMeta">Autor • Edição</p>
+</div>
+</div>
+<!-- Form -->
+<form class="flex flex-col gap-4" id="loanForm" onsubmit="handleLoanSubmit(event)">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5" for="borrowerName">
+            Seu Nome Completo *
+          </label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md outline-none focus:bg-surface-container transition-colors" id="borrowerName" placeholder="Ex: Clara Mendes" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5" for="borrowerPhone">
+            WhatsApp / Telefone para contato *
+          </label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md outline-none focus:bg-surface-container transition-colors" id="borrowerPhone" placeholder="(11) 98765-4321" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5" for="loanDate">
+            Data pretendida de retirada *
+          </label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:bg-surface-container transition-colors" id="loanDate" required="" type="date"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1.5" for="borrowerNote">
+            Mensagem para Felipe <span class="text-outline font-normal">(opcional)</span>
+</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md outline-none focus:bg-surface-container transition-colors resize-none" id="borrowerNote" placeholder="Ex: Posso retirar na quarta no Metrô Fradique Coutinho..." rows="2"></textarea>
+</div>
+<div class="mt-2 p-3 rounded-lg bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Felipe receberá uma notificação instantânea e entrará em contato via WhatsApp para confirmar o local e o horário da retirada.
+          </p>
+</div>
+<div class="flex items-center gap-3 mt-4">
+<button class="flex-1 py-3 rounded-lg bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-lg text-label-lg transition-colors" onclick="closeLoanModal()" type="button">
+            Cancelar
+          </button>
+<button class="flex-1 py-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors shadow-sm flex items-center justify-center gap-1.5 active:scale-95" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+            Enviar Pedido
+          </button>
+</div>
+</form>
+<!-- Confirmation Feedback Inside Modal -->
+<div class="hidden flex-col items-center justify-center py-6 text-center" id="modalSuccess">
+<div class="w-14 h-14 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[32px]">check_circle</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Pedido Enviado com Sucesso!</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-sm">
+          Felipe já foi avisado sobre seu interesse no livro. Fique atento às suas mensagens no WhatsApp!
+        </p>
+<button class="mt-6 px-6 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg" onclick="closeLoanModal()">
+          Concluir e voltar
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notification -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="copyToast">
+<div class="flex items-center gap-2 px-4 py-3 rounded-lg bg-inverse-surface text-inverse-on-surface shadow-xl font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">check_circle</span>
+<span>Link do catálogo copiado para a área de transferência!</span>
+</div>
+</div>
+<script>
+    let currentCategory = 'Todos';
+
+    function setFilter(cat, btn) {
+      currentCategory = cat;
+      document.querySelectorAll('.filter-chip').forEach(el => {
+        el.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        el.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      filterBooks();
+    }
+
+    function resetFilters() {
+      const search = document.getElementById('bookSearchInput');
+      if (search) search.value = '';
+      const allBtn = document.querySelector('.filter-chip');
+      if (allBtn) setFilter('Todos', allBtn);
+    }
+
+    function filterBooks() {
+      const query = (document.getElementById('bookSearchInput')?.value || '').toLowerCase().trim();
+      const cards = document.querySelectorAll('.book-card');
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const title = (card.getAttribute('data-title') || '').toLowerCase();
+        const author = (card.getAttribute('data-author') || '').toLowerCase();
+        const category = card.getAttribute('data-category');
+        const status = card.getAttribute('data-status');
+
+        const matchesQuery = title.includes(query) || author.includes(query);
+        let matchesCategory = false;
+
+        if (currentCategory === 'Todos') {
+          matchesCategory = true;
+        } else if (currentCategory === 'Disponíveis') {
+          matchesCategory = (status === 'available');
+        } else {
+          matchesCategory = (category === currentCategory);
+        }
+
+        if (matchesQuery && matchesCategory) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      const empty = document.getElementById('noResultsState');
+      if (empty) {
+        if (visibleCount === 0) {
+          empty.classList.remove('hidden');
+          empty.classList.add('flex');
+        } else {
+          empty.classList.add('hidden');
+          empty.classList.remove('flex');
+        }
+      }
+    }
+
+    function openLoanModal(title, author, meta) {
+      const modal = document.getElementById('loanModal');
+      const content = document.getElementById('loanModalContent');
+      const form = document.getElementById('loanForm');
+      const success = document.getElementById('modalSuccess');
+
+      if (!modal || !content) return;
+
+      document.getElementById('modalBookTitle').innerText = title;
+      document.getElementById('modalBookMeta').innerText = author + ' • ' + meta;
+
+      // Set default minimum date to tomorrow
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      const minDate = tomorrow.toISOString().split('T')[0];
+      const dateInput = document.getElementById('loanDate');
+      if (dateInput) {
+        dateInput.min = minDate;
+        dateInput.value = minDate;
+      }
+
+      form.classList.remove('hidden');
+      success.classList.add('hidden');
+
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        content.classList.remove('scale-95');
+        content.classList.add('scale-100');
+      }, 10);
+    }
+
+    function closeLoanModal() {
+      const modal = document.getElementById('loanModal');
+      const content = document.getElementById('loanModalContent');
+      if (!modal || !content) return;
+
+      modal.classList.add('opacity-0');
+      content.classList.add('scale-95');
+      content.classList.remove('scale-100');
+
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 200);
+    }
+
+    function handleLoanSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('loanForm');
+      const success = document.getElementById('modalSuccess');
+      if (form && success) {
+        form.classList.add('hidden');
+        success.classList.remove('hidden');
+      }
+    }
+
+    function copyCatalogLink() {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(window.location.href);
+      }
+      const toast = document.getElementById('copyToast');
+      if (toast) {
+        toast.classList.remove('translate-y-20', 'opacity-0');
+        setTimeout(() => {
+          toast.classList.add('translate-y-20', 'opacity-0');
+        }, 3000);
+      }
+      const text = document.getElementById('shareBtnText');
+      if (text) {
+        const prev = text.innerText;
+        text.innerText = 'Copiado!';
+        setTimeout(() => { text.innerText = prev; }, 2000);
+      }
+    }
+
+    // Close modal on escape
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLoanModal();
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-10"><div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-primary">Bookstore</span><span class="font-body-sm text-body-sm text-secondary">— Acervo Pessoal &amp; Empréstimos</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Biblioteca de Felipe Botero. Todos os direitos reservados.</p></div></footer></body></html>
