@@ -6,7 +6,7 @@ import { useAuth } from "../auth/AuthContext";
 import { Brand, BrandMark } from "../components/ui/Brand";
 import { Icon } from "../components/ui/Icon";
 
-const googleEnabled = Boolean(import.meta.env.VITE_GOOGLE_CLIENT_ID);
+const googleEnabled = Boolean(__GOOGLE_CLIENT_ID__);
 
 function Showcase() {
   return (

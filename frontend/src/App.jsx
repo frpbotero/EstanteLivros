@@ -12,7 +12,7 @@ import { Login } from "./pages/Login";
 import { NotFound } from "./pages/NotFound";
 import { PublicLibrary } from "./pages/PublicLibrary";
 
-const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+const googleClientId = __GOOGLE_CLIENT_ID__;
 
 export function App() {
   const routes = (

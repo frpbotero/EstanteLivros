@@ -1,10 +1,11 @@
-FROM node:20-alpine AS build
+FROM node:24-alpine AS build
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 COPY . .
-ARG VITE_API_URL=http://localhost:3000/
-ENV VITE_API_URL=$VITE_API_URL
+ARG BACKEND_URL
+ARG GOOGLE_CLIENT_ID
+ENV BACKEND_URL=$BACKEND_URL GOOGLE_CLIENT_ID=$GOOGLE_CLIENT_ID
 RUN npm run build
 
 FROM nginx:alpine
